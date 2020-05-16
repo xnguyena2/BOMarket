@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BeerItemController">
+            <connections>
+                <outlet property="ProductLogo" destination="Tsi-RT-Pzn" id="3ym-Rt-jbI"/>
+                <outlet property="ProductName" destination="wy7-YT-odc" id="Vkz-5Q-nwF"/>
+                <outlet property="ProductPrice" destination="dST-aQ-kcL" id="k8a-cM-dE1"/>
+                <outlet property="ProductSaleOff" destination="uzc-sX-7ZS" id="Fvj-j4-efJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" ambiguous="YES" image="cart" translatesAutoresizingMaskIntoConstraints="NO" id="Tsi-RT-Pzn" userLabel="ProductLogo">
+                    <rect key="frame" x="0.0" y="44" width="414" height="766.5"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-10.5%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uzc-sX-7ZS">
+                    <rect key="frame" x="354" y="44" width="60" height="21"/>
+                    <color key="backgroundColor" red="0.92941176469999998" green="0.66274509800000003" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="t6N-jv-89T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Product Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy7-YT-odc" userLabel="ProductName">
+                    <rect key="frame" x="152" y="815.5" width="110" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Product Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dST-aQ-kcL" userLabel="ProductPrice">
+                    <rect key="frame" x="155" y="841.5" width="104" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Tsi-RT-Pzn" secondAttribute="trailing" id="3ZY-eR-FQC"/>
+                <constraint firstItem="dST-aQ-kcL" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="GYY-pz-Tqg"/>
+                <constraint firstItem="dST-aQ-kcL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="IJS-pQ-03J"/>
+                <constraint firstItem="wy7-YT-odc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ldu-UN-ygu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uzc-sX-7ZS" secondAttribute="trailing" id="RLP-Wh-KcE"/>
+                <constraint firstItem="wy7-YT-odc" firstAttribute="top" secondItem="Tsi-RT-Pzn" secondAttribute="bottom" constant="5" id="e01-Fp-QVX"/>
+                <constraint firstItem="Tsi-RT-Pzn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="jzB-dD-ffJ"/>
+                <constraint firstItem="dST-aQ-kcL" firstAttribute="top" secondItem="wy7-YT-odc" secondAttribute="bottom" constant="5" id="nVK-32-FrF"/>
+                <constraint firstItem="Tsi-RT-Pzn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="rBQ-86-BfY"/>
+                <constraint firstItem="uzc-sX-7ZS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="uBj-Ec-8Du"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="133" y="153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cart" width="512" height="512"/>
+    </resources>
+</document>
