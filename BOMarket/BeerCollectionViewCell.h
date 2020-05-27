@@ -1,20 +1,17 @@
 //
-//  BeerItemController.h
+//  BeerCollectionViewCell.h
 //  BOMarket
 //
-//  Created by imac 2015 4k on 5/11/20.
+//  Created by imac 2015 4k on 5/18/20.
 //  Copyright © 2020 Buffchalo. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "ProductData.h"
+#import "BeerItemController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-
-@interface BeerItemController : UIView
-
--(void) UpdateWidth:(float)height;
+@interface BeerCollectionViewCell : UICollectionViewCell
 
 -(void) SetData:(ProductData*)data;
 

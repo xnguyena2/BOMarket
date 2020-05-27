@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BeerItemController.h"
+#import "BeerCollectionViewCell.h"
+#import "AllProductionCollectionView.h"
 
 @interface ViewController : UIViewController<UISearchBarDelegate>
 

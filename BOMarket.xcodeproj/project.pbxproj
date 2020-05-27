@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341338AB2474DE0900CDB0E7 /* CategoryScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341338AA2474DE0900CDB0E7 /* CategoryScreenViewController.m */; };
 		34661DAD246764ED00D34CC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34661DAC246764ED00D34CC2 /* AppDelegate.m */; };
 		34661DB0246764ED00D34CC2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 34661DAF246764ED00D34CC2 /* SceneDelegate.m */; };
 		34661DB3246764ED00D34CC2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34661DB2246764ED00D34CC2 /* ViewController.m */; };
@@ -18,6 +19,9 @@
 		34661DD32467651400D34CC2 /* BOMarketUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 34661DD22467651400D34CC2 /* BOMarketUITests.m */; };
 		34DE45BA2469419600188D79 /* BeerItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34DE45B92469419600188D79 /* BeerItemController.m */; };
 		34DE45BC246943A800188D79 /* BeerItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34DE45BB246943A800188D79 /* BeerItem.xib */; };
+		34F481AA2472411F00DAEEF4 /* BeerCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F481A92472411F00DAEEF4 /* BeerCollectionViewCell.m */; };
+		34F481B02472958600DAEEF4 /* AllProductionCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F481AF2472958600DAEEF4 /* AllProductionCollectionView.m */; };
+		34F481B32472AB3E00DAEEF4 /* ProductData.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F481B22472AB3E00DAEEF4 /* ProductData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		341338A92474DE0900CDB0E7 /* CategoryScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryScreenViewController.h; sourceTree = "<group>"; };
+		341338AA2474DE0900CDB0E7 /* CategoryScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryScreenViewController.m; sourceTree = "<group>"; };
 		34661DA8246764ED00D34CC2 /* BOMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BOMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34661DAB246764ED00D34CC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		34661DAC246764ED00D34CC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,6 +65,12 @@
 		34DE45B82469419600188D79 /* BeerItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerItemController.h; sourceTree = "<group>"; };
 		34DE45B92469419600188D79 /* BeerItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerItemController.m; sourceTree = "<group>"; };
 		34DE45BB246943A800188D79 /* BeerItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerItem.xib; sourceTree = "<group>"; };
+		34F481A82472411F00DAEEF4 /* BeerCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerCollectionViewCell.h; sourceTree = "<group>"; };
+		34F481A92472411F00DAEEF4 /* BeerCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerCollectionViewCell.m; sourceTree = "<group>"; };
+		34F481AE2472958600DAEEF4 /* AllProductionCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllProductionCollectionView.h; sourceTree = "<group>"; };
+		34F481AF2472958600DAEEF4 /* AllProductionCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllProductionCollectionView.m; sourceTree = "<group>"; };
+		34F481B12472AB3E00DAEEF4 /* ProductData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductData.h; sourceTree = "<group>"; };
+		34F481B22472AB3E00DAEEF4 /* ProductData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +133,12 @@
 				34661DB92467651000D34CC2 /* LaunchScreen.storyboard */,
 				34661DBC2467651000D34CC2 /* Info.plist */,
 				34661DBD2467651000D34CC2 /* main.m */,
+				34F481A82472411F00DAEEF4 /* BeerCollectionViewCell.h */,
+				34F481A92472411F00DAEEF4 /* BeerCollectionViewCell.m */,
+				34F481AE2472958600DAEEF4 /* AllProductionCollectionView.h */,
+				34F481AF2472958600DAEEF4 /* AllProductionCollectionView.m */,
+				341338A92474DE0900CDB0E7 /* CategoryScreenViewController.h */,
+				341338AA2474DE0900CDB0E7 /* CategoryScreenViewController.m */,
 			);
 			path = BOMarket;
 			sourceTree = "<group>";
@@ -149,6 +167,8 @@
 				34DE45B82469419600188D79 /* BeerItemController.h */,
 				34DE45B92469419600188D79 /* BeerItemController.m */,
 				34DE45BB246943A800188D79 /* BeerItem.xib */,
+				34F481B12472AB3E00DAEEF4 /* ProductData.h */,
+				34F481B22472AB3E00DAEEF4 /* ProductData.m */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -285,9 +305,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				34661DB3246764ED00D34CC2 /* ViewController.m in Sources */,
+				34F481B02472958600DAEEF4 /* AllProductionCollectionView.m in Sources */,
 				34661DAD246764ED00D34CC2 /* AppDelegate.m in Sources */,
+				34F481B32472AB3E00DAEEF4 /* ProductData.m in Sources */,
 				34661DBE2467651000D34CC2 /* main.m in Sources */,
 				34DE45BA2469419600188D79 /* BeerItemController.m in Sources */,
+				34F481AA2472411F00DAEEF4 /* BeerCollectionViewCell.m in Sources */,
+				341338AB2474DE0900CDB0E7 /* CategoryScreenViewController.m in Sources */,
 				34661DB0246764ED00D34CC2 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

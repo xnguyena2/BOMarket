@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "BeerItemController.h"
 
 @interface ViewController ()
 
@@ -19,11 +18,18 @@
 
 @property (weak, nonatomic) IBOutlet UIStackView *FlashSale;
 
+@property (weak, nonatomic) IBOutlet UICollectionView *AllProductContainer;
+
+@property (strong, nonatomic) AllProductionCollectionView *allProduct;
+
 @end
 
 @implementation ViewController
 
+
 - (void)setupUI{
+    self.allProduct = [[AllProductionCollectionView alloc] init];
+    [[self allProduct] LoadData];
     
     [self AdsContainer].layer.borderWidth = 0.3;
     [self AdsContainer].layer.borderColor = UIColor.grayColor.CGColor;
@@ -35,6 +41,10 @@
     
     [self Search].delegate = self;
     
+    [self AllProductContainer].delegate = [self allProduct];
+    [self AllProductContainer].dataSource = [self allProduct];
+    [[self AllProductContainer] registerClass:[BeerCollectionViewCell class] forCellWithReuseIdentifier:@"BeerCell"];
+    
     [self addProductToFlashSale];
 }
 
@@ -42,29 +52,41 @@
     NSLog(@"add beer");
     BeerItemController *beer = [[BeerItemController alloc] init];
     [beer UpdateWidth:100];
-    BeerItemController *beer1 = [[BeerItemController alloc] init];
-    [beer1 UpdateWidth:100];
-    BeerItemController *beer2 = [[BeerItemController alloc] init];
-    [beer2 UpdateWidth:100];
-    BeerItemController *beer3 = [[BeerItemController alloc] init];
-    [beer3 UpdateWidth:100];
-    BeerItemController *beer4 = [[BeerItemController alloc] init];
-    [beer4 UpdateWidth:100];
-    BeerItemController *beer5 = [[BeerItemController alloc] init];
-    [beer5 UpdateWidth:100];
     
     
     [[self FlashSale] addArrangedSubview:beer];
-    [[self FlashSale] addArrangedSubview:beer1];
-    [[self FlashSale] addArrangedSubview:beer2];
-    [[self FlashSale] addArrangedSubview:beer3];
-    [[self FlashSale] addArrangedSubview:beer4];
-    [[self FlashSale] addArrangedSubview:beer5];
+    
+    [NSTimer scheduledTimerWithTimeInterval:2.0
+                                     target:self
+                                   selector:@selector(theAction)
+                                   userInfo:nil
+                                    repeats:NO];
+}
+
+-(void) theAction {
+    NSLog(@"Will appear after a 2 second delay.");
+    BeerItemController *beer = [[BeerItemController alloc] init];
+    ProductData *p8 = [[ProductData alloc] init];
+    p8.ID = @"8";
+    p8.ProductName = @"Bia 8";
+    p8.ProductPrice = @"133.0";
+    p8.ProductProductSaleOff = @"15.9%";
+    [beer SetData:p8];
+    [beer UpdateWidth:100];
+    [[self FlashSale] addArrangedSubview:beer];
+    /*
+    [[self AllProductContainer] performBatchUpdates:^{
+        [array addObject:@"llllll"];
+        [[self AllProductContainer] insertItemsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:array.count-1
+                                                                                                        inSection:0]]];
+    } completion:nil];
+     */
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // [self initArray];
     [self setupUI];
 }
 

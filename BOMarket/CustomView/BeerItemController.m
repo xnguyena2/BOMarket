@@ -19,6 +19,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *ProductPrice;
 
+@property (nonatomic, assign) ProductData *data;
 
 @end
 
@@ -67,8 +68,17 @@
                                                                           toItem:nil
                                                                        attribute:NSLayoutAttributeNotAnAttribute
                                                                       multiplier:1.0
-                                                                        constant:150];
+                                                                        constant:height];
     [self addConstraints:@[widthConstraint]];
+}
+
+-(void) SetData:(ProductData*)data{
+    if(self.data.ID == nil){
+        self.data = data;
+        self.ProductSaleOff.text = data.ProductProductSaleOff;
+        self.ProductName.text = data.ProductName;
+        self.ProductPrice.text = data.ProductPrice;
+    }
 }
 
 @end
